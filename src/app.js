@@ -18,27 +18,27 @@ app.get('/favicon.ico', (req, res) => {
 })
 
 app.post('/screen/on', (req, res) => {
-    exec("xset -display :0.0 dpms force on", execOptions, (error, stdout, stderr) => {
+    execSync("xset -display :0.0 dpms force on", execOptions, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
         }
         if (stderr) {
             console.log(`stderr: ${stderr}`);
         }
-        return {delay: 10000};
     });
+    return {delay: 10000};
 })
 
 app.post('/screen/off', (req, res) => {
-    exec("xset -display :0.0 dpms force off", execOptions, (error, stdout, stderr) => {
+    execSync("xset -display :0.0 dpms force off", execOptions, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
         }
         if (stderr) {
             console.log(`stderr: ${stderr}`);
         }
-        return {delay: 10000};
     });
+    return {delay: 10000};
 })
 
 // Configure app
