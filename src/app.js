@@ -18,7 +18,7 @@ app.get('/favicon.ico', (req, res) => {
 })
 
 app.post('/screen/on', (req, res) => {
-    execSync("xset -display :0.0 dpms force on", execOptions, (error, stdout, stderr) => {
+    exec("xset -display :0.0 dpms force on", execOptions, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
         }
@@ -30,7 +30,7 @@ app.post('/screen/on', (req, res) => {
 })
 
 app.post('/screen/off', (req, res) => {
-    execSync("xset -display :0.0 dpms force off", execOptions, (error, stdout, stderr) => {
+    exec("xset -display :0.0 dpms force off", execOptions, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
         }
