@@ -1,0 +1,17 @@
+{
+  "name": "raspberry-pi-rest-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "properties-reader": "^2.2.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
