@@ -11,7 +11,6 @@
   "description": "",
   "devDependencies": {
     "express": "^4.17.1",
-    "properties-reader": "^2.2.0",
-    "serve-favicon": "^2.5.0"
+    "properties-reader": "^2.2.0"
   }
 }

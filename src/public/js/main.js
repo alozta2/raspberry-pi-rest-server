@@ -12,7 +12,15 @@ function initButtonClick(id, targetUrl, body) {
                 method: 'post',
                 body: body
             });
-            console.log('Completed!', response);
+
+            if(response) {
+                if(response.delay) {
+                    button.disabled = true;
+                    setTimeout(() => {
+                        button.disabled = false;
+                    }, response.delay);
+                }
+            }
         } catch(err) {
             console.error(`Error: ${err}`);
         }
