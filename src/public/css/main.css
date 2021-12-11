@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+    #screen-actions {
+        width: 100%;
+        height: 100%;
+    }
+
+    #screen-actions table,
+    #screen-actions table button {
+        width: 100%;
+        height: 100%;
+        font-size: 300%;
+    }
+
+    #screen-actions tr {
+        height: 50%;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  { }
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { }
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+    #screen-actions {
+        width: 400px;
+        height: 200px;
+    }
+
+    #screen-actions table,
+    #screen-actions table button {
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+    }
+
+    #screen-actions tr {
+        height: 50%;
+    }
+}

@@ -26,7 +26,7 @@ app.post('/screen/on', (req, res) => {
             console.log(`stderr: ${stderr}`);
         }
     });
-    res.send({delay: 10000});
+    res.send({delay: 2000});
 })
 
 app.post('/screen/off', (req, res) => {
@@ -38,7 +38,7 @@ app.post('/screen/off', (req, res) => {
             console.log(`stderr: ${stderr}`);
         }
     });
-    res.send({delay: 10000});
+    res.send({delay: 12000});
 })
 
 // Configure app
